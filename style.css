@@ -5,6 +5,142 @@
   list-style: none;
   text-decoration: none;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  left: 165px;
+  width: 50%;
+  padding: 50px;
+}
+.left p {
+  padding: 20px 0;
+  line-height: 28px;
+  color: gray;
+}
+#section1 {
+  background-color: #1b262f;
+}
+.right {
+  justify-content: left;
+  padding: 20px;
+  width: 50%;
+}
+.rightButton {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+.rightTop {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+.text {
+  color: white;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutus {
+  width: 20%;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: #1b262f;
+  color: white;
+}
+#bottom {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomright {
+  text-align: left;
+  padding: 60px;
+}
+.text1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  color: #36536b;
+}
+.textt {
+  color: #36536b;
+  line-height: 28px;
+  padding: 20px 0;
+}
+#mobile {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.mobileright {
+  display: flex;
+  width: 50%;
+}
+.mobileleft {
+  width: 50%;
+  padding: 50px 100px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.imagemobile1 {
+  width: 263px;
+  height: 500px;
+  top: 1793px;
+  left: 705px;
+}
+.imagemobile {
+  width: 310px;
+  height: 500px;
+  top: 1793px;
+}
+@media screen and (max-width: 767px) {
+  .text {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .left {
+    justify-content: center;
+    align-items: center;
+  }
+  .rightTop {
+    align-items: center;
+    justify-content: center;
+  }
+  .rightButton {
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutus {
+    width: 30%;
+    height: 30px;
+  }
+  #bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #mobile {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .textt {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Selale */
+}
 #section {
   background-color: rgb(203, 231, 231);
 }
@@ -110,7 +246,6 @@
     display: inline-block;
   } */
 }
-
 
 /* Footer */
 @media screen and (max-width: 767px) {
