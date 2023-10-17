@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    height: 50px;
+    text-decoration: none;
+    outline: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+ .container .box-1{
+    border-radius: 30%;
+}
+
+.box nav ul{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+}
+.box-1 button{
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
