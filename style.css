@@ -1,13 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#section {
+  background-color: rgb(203, 231, 231);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.content-section {
+  width: 100%;
+}
+.top-section {
+  /* width: 720px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.top {
+  width: 240px;
+  column-gap: 20px;
+}
+.top h2 {
+  color: #36536b;
+}
+.top p {
+  color: #6c8294;
+}
+.top img {
+  width: 80px;
+  padding: 10px;
+}
+.top h2 {
+  padding: 10px;
+}
+.bottom {
+  height: 144px;
+  /* margin: 50px; */
+  text-align: center;
+}
+.bottom .ready h2 {
+  color: #36536b;
+  margin: 20px;
+}
+.input-box {
+  position: relative;
+  display: inline-block;
+}
+.input-box input {
+  padding-left: 10px;
+  padding-right: 200px;
+  border-radius: 20px;
+  border: none;
+  width: 445px;
+  height: 48px;
+}
+.input-box button {
+  color: white;
+  background-color: #ba4270;
+  width: 170px;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Footer */
+#footer {
+  background-color: rgb(6, 6, 17);
+}
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav nav ul {
+  font-size: 25px;
+  display: flex;
+  gap: 30px;
+}
+.nav nav ul li a {
+  color: white;
+}
+.icons i {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
 
+/* Section */
+@media screen and (max-width: 767px) {
+  .top-section {
+    flex-direction: column;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+
+  /* .inpit-box input{
+    display: inline-block;
+  } */
+}
+
+
+/* Footer */
+@media screen and (max-width: 767px) {
+  .footer-end {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .nav nav ul {
+    flex-direction: column;
+  }
 }
